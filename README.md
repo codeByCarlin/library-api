@@ -7,7 +7,6 @@ API REST desenvolvida em **Java** e **Spring Boot** (com Maven) para gerenciamen
 - **Camada de controle (`controller`, `dto`, `mapper`, `common`)**: endpoints REST (`AutorController`, `LivroController`, `GenericController`), objetos de requisição/resposta (`AutorDTO`, `AutorResponseDTO`, `LivroDTO`, `LivroResponseDTO`), padronização de erros (`ErroResponse`, `ErroCampo`) e mapeamento entre entidades e DTOs.
 - **Regras de negócio e validação (`service`, `validator`, `exceptions`)**: serviços (`AutorService`, `LivroService`), validadores dedicados (`AutorValidator`, `LivroValidator`) e exceções customizadas (`OperacaoNaoPermitidaException`, `RegistroCadastradoException`).
 - **Persistência, filtros e paginação (`model`, `repository`, `repository/specs`)**: entidades e enums (`Autor`, `Livro`, `Genero`), repositórios (`AutorRepository`, `LivroRepository`), filtros dinâmicos com Specifications e listagem paginada.
-- **Segurança (`config`)**: configurações de segurança com **Spring Security** (em evolução conforme os estudos).
 - **Infraestrutura com Docker**: uso direto de comandos básicos do Docker (download de imagem e controle de ciclo de vida do container), sem Docker Compose ou orquestração.
 - **Testes (`src/test/java`)**: testes automatizados (`AutorRepositoryTest`, `LivroRepositoryTest`, `LibraryapiApplicationTests`).
 
